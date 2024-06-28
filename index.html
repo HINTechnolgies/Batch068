@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 5px;
+        }
+        table, th, td {
+            border: 1px solid #dd0d;
+        }
+        th, td {
+            padding: 5px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f202;
+        }
+        td:nth-child(1) {
+            width: 3%;
+        }
+        td:nth-child(2) {
+            width: 10%;
+        }
+        td:nth-child(3) {
+            width: %;
+        }
+        td:nth-child(4) {
+            width: 15%;
+        }
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        a {
+            color: blue;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        a:hover {
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Class List</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Sr No</th>
+                <th>Class Name</th>
+                <th>Video</th>
+                <th>View Document</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Introduction to Linux Commands where you can learn 50+ basic commands and Introduction to Linux Commands where you can learn 50+ basic commands</td>
+                <td>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/VIDEO_ID_HERE" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </td>
+                <td><a href="documents/math_document.pdf" target="_blank">View Document</a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Science</td>
+                <td>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/VIDEO_ID_HERE" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </td>
+                <td><a href="documents/science_document.pdf" target="_blank">View Document</a></td>
+            </tr>
+            <!-- Add more rows as needed -->
+        </tbody>
+    </table>
+</body>
+</html>
